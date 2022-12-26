@@ -1,0 +1,58 @@
+/* 공통부분 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Nanum Gothic', sans-serif;/*각종 웹브라우저에 호환되는 나눔고딕체 적용*/
+}
+html{
+  scroll-behavior: smooth;
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0 20px;
+  margin: auto;
+}
+/* 상단 네비게이션 & 로고  */
+.navBar{
+  position: fixed; /* 상단에 고정 */
+  background-color: olive;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 999; /* z축을 기준으로 가장 위에 배치 */
+  transition: all 0.3s ease;
+}
+.navBar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 요소들을 좌 우로 정렬 */
+}
+.navBar .logo{
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 20px;
+  color: white;
+}
+.navBar .logo a{
+  color: white;
+  text-decoration: none;
+}
+
+.navBar .menu-bar li{
+  list-style: none;
+  margin: 5px 20px 0 0;
+  display: inline-block;
+}
+.navBar .menu-bar li a:hover{
+  color: greenyellow;
+}
+.homeSec{
+  display: flex;
+  color: white;
+  height: 100;
+  background-color: orange;
+}
+.homeSec .max-width{
+  margin: auto 0 auto 40px;
+}
