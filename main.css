@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 /* 공통부분 */
-*{
+body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-
-  font-family: 'Nanum Gothic', sans-serif;/*각종 웹브라우저에 호환되는 나눔고딕체 적용*/
+  font-family: 'Jost', sans-serif;/*각종 웹브라우저에 호환되는 나눔고딕체 적용*/
 }
 html{
   scroll-behavior: smooth;
@@ -18,7 +18,7 @@ html{
 /* 상단 네비게이션 & 로고  */
 .navBar{
   position: fixed; /* 상단에 고정 */
-  background-color: olive;
+  background-color: black;
   width: 100%;
   padding: 20px 0;
   z-index: 999; /* z축을 기준으로 가장 위에 배치 */
@@ -45,8 +45,11 @@ html{
   margin: 5px 20px 0 0;
   display: inline-block;
 }
+.navBar .menu-bar li a{
+  color:white;
+}
 .navBar .menu-bar li a:hover{
-  color: greenyellow;
+  color: gray;
 }
 .homeSec{
   display: flex;
@@ -55,8 +58,20 @@ html{
   height: 100vh;
   background-size: cover;
   min-height: 500px;
-  background-color: orange;
+  background-color: black;
 }
 .homeSec .max-width{
-  margin: auto 0 auto 0;
+  /* margin: auto 0 auto 0; */
+}
+.homeSec .home-section{
+  color:yellow;
+  font-size: 20px;
+}
+.homeSec .home-section .text-1 span{
+  color:white;
+}
+.homeSec .home-section .text-1 span:hover{
+  color:yellow;
+  transform: matrix();
+  /* transition: all 0.5s; */
 }
