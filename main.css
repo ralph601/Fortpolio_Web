@@ -63,9 +63,9 @@ html{
   min-height: 500px;
   background-color: #3E4034;
 }
-/* .homeSec .max-width{
-  margin: auto 0 auto 0; /* margin top right bottom left;
-} */
+.homeSec .max-width{
+   margin: auto 0 auto 0; /*margin top right bottom left;*/
+}
 
 .homeSec .home-section h1{
   color: #BFBFBA;
@@ -98,8 +98,17 @@ html{
 .aboutSec{
   font-family: 'Montserrat',sans-serif;
   height: 100vh;
-  background-color: #8B8C81;
-} 
+  background-color: #3E4034;
+}
+.homeSec .max-width{
+  margin: auto 0 auto 0; /*margin top right bottom left;*/
+}
+.aboutSec .aboutTitle{
+  text-align: center;
+  font-size: 70px;
+  font-weight: 500;
+  color: #BFBFBA;
+}
 
   /* Color Theme Swatches in Hex */
 .Venice-Panorama-1-hex { color: #3E4034; }
