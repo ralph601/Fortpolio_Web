@@ -23,11 +23,11 @@ html{
 /* 상단 네비게이션 & 로고  */
 .navBar{
   position: fixed; /* 상단에 고정 */
-  background-color: black;
+  background-color: #3E4034;
   width: 100%;
   padding: 20px 0;
   z-index: 999; /* z축을 기준으로 가장 위에 배치 */
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   font-size: 20px;
   font-family: 'Montserrat', 'sans-serif';/*각종 웹브라우저에 호환되는 나눔고딕체 적용*/
 }
@@ -53,45 +53,58 @@ html{
   color: yellow;
   transition: 0.5s;
 }
-/*자기소개 섹션*/
+
+/* 메인 화면 섹션 */
 .homeSec{
   display: flex;
-  /* height: 100vh; */
+  flex-direction: column;
+  height: 100vh;
   background-size: cover;
   min-height: 500px;
-  background-color: black;
+  background-color: #3E4034;
+}
+/* .homeSec .max-width{
+  margin: auto 0 auto 0; /* margin top right bottom left;
+} */
+
+.homeSec .home-section h1{
+  color: #BFBFBA;
+  margin:20px 20px 30px 20px;
 }
 .home-section .korean-comment{
   font-family: 'Noto Sans KR',sans-serif;
   font-weight: 500;
   font-size: 70px;
 }
+
 .home-section .english-comment{
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 200;
+  font-style: italic;
   font-family: 'Montserrat',sans-serif;
 }
-.homeSec .max-width{
-  margin: 100px 200px; /* margin top right bottom left;*/
-}
-.homeSec .home-section{
-  font-family: 'Nanum Gothic',sans-serif;
-}
-.homeSec .home-section h1{
-  color: white;
-}
 
-.homeSec .home-section p,
+
 .homeSec .home-section a{
-  color:yellow;
+  -webkit-text-stroke: 1px black;
+  color:white;
+  transition: all 0.3s;
 }
 .homeSec .home-section a:hover{
-  color:white;
-}
-/* .homeSec .home-section .text-1 span{
-  transition: all 0.3s ease;
-  color:white;
-} */
-/* .homeSec .home-section .text-1 span:hover{
   color:yellow;
-  /* transition: all 0.5s ease; }*/
+}
+
+/* 자기 소개 섹션 */
+.aboutSec{
+  font-family: 'Montserrat',sans-serif;
+  height: 100vh;
+  background-color: #8B8C81;
+} 
+
+  /* Color Theme Swatches in Hex */
+.Venice-Panorama-1-hex { color: #3E4034; }
+.Venice-Panorama-2-hex { color: #58594F; }
+.Venice-Panorama-3-hex { color: #8B8C81; }
+.Venice-Panorama-4-hex { color: #D9D9D2; }
+.Venice-Panorama-5-hex { color: #BFBFBA; }
+
