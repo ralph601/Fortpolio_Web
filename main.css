@@ -1,15 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 /* 공통부분 */
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Jost', sans-serif;/*각종 웹브라우저에 호환되는 나눔고딕체 적용*/
 }
+
+a{
+  color:white;
+  text-decoration: none; /* 링크 언더라인 삭제 */
+}
+
 html{
   scroll-behavior: smooth;
 }
+
 .max-width{
   max-width: 1300px;
   padding: 0 20px;
@@ -23,6 +28,8 @@ html{
   padding: 20px 0;
   z-index: 999; /* z축을 기준으로 가장 위에 배치 */
   transition: all 0.3s ease;
+  font-size: 20px;
+  font-family: 'Montserrat', 'sans-serif';/*각종 웹브라우저에 호환되는 나눔고딕체 적용*/
 }
 .navBar .max-width{
   display: flex;
@@ -35,43 +42,56 @@ html{
   margin-left: 20px;
   color: white;
 }
-.navBar .logo a{
-  color: white;
-  text-decoration: none;
-}
 
 .navBar .menu-bar li{
   list-style: none;
   margin: 5px 20px 0 0;
   display: inline-block;
 }
-.navBar .menu-bar li a{
-  color:white;
-}
+
 .navBar .menu-bar li a:hover{
-  color: gray;
+  color: yellow;
+  transition: 0.5s;
 }
+/*자기소개 섹션*/
 .homeSec{
   display: flex;
-  /* position: absolute; */
-  color: white;
-  height: 100vh;
+  /* height: 100vh; */
   background-size: cover;
   min-height: 500px;
   background-color: black;
 }
+.home-section .korean-comment{
+  font-family: 'Noto Sans KR',sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+}
+.home-section .english-comment{
+  font-size: 25px;
+  font-weight: 500;
+  font-family: 'Montserrat',sans-serif;
+}
 .homeSec .max-width{
-  /* margin: auto 0 auto 0; */
+  margin: 100px 200px; /* margin top right bottom left;*/
 }
 .homeSec .home-section{
-  color:yellow;
-  font-size: 20px;
+  font-family: 'Nanum Gothic',sans-serif;
 }
-.homeSec .home-section .text-1 span{
+.homeSec .home-section h1{
+  color: white;
+}
+
+.homeSec .home-section p,
+.homeSec .home-section a{
+  color:yellow;
+}
+.homeSec .home-section a:hover{
   color:white;
 }
-.homeSec .home-section .text-1 span:hover{
+/* .homeSec .home-section .text-1 span{
+  transition: all 0.3s ease;
+  color:white;
+} */
+/* .homeSec .home-section .text-1 span:hover{
   color:yellow;
-  transform: matrix();
-  /* transition: all 0.5s; */
-}
+  /* transition: all 0.5s ease; }*/
