@@ -15,15 +15,15 @@ html{
   scroll-behavior: smooth;
 }
 
-.max-width{
+/* .max-width{
   max-width: 1300px;
   padding: 0 20px;
   margin: auto;
-}
+} */
 /* 상단 네비게이션 & 로고  */
 .navBar{
   position: fixed; /* 상단에 고정 */
-  background-color: #3E4034;
+  background-color: #A68263;
   width: 100%;
   padding: 20px 0;
   z-index: 999; /* z축을 기준으로 가장 위에 배치 */
@@ -61,20 +61,23 @@ html{
   height: 100vh;
   background-size: cover;
   min-height: 500px;
-  background-color: #3E4034;
+  background-color: #8C694A;
 }
 .homeSec .max-width{
    margin: auto 0 auto 0; /*margin top right bottom left;*/
 }
 
 .homeSec .home-section h1{
-  color: #BFBFBA;
+  color: #C5D3D9;
   margin:20px 20px 30px 20px;
 }
 .home-section .korean-comment{
   font-family: 'Noto Sans KR',sans-serif;
   font-weight: 500;
   font-size: 70px;
+  display: inline; vertical-align: middle;
+  border-right: .05em solid black;
+  animation:  cursor 0.2s ease infinite;
 }
 
 .home-section .english-comment{
@@ -98,7 +101,7 @@ html{
 .aboutSec{
   font-family: 'Montserrat',sans-serif;
   height: 100vh;
-  background-color: #3E4034;
+  background-color:#8C694A;
 }
 .homeSec .max-width{
   margin: auto 0 auto 0; /*margin top right bottom left;*/
@@ -107,8 +110,29 @@ html{
   text-align: center;
   font-size: 70px;
   font-weight: 500;
-  color: #BFBFBA;
+  color: #C5D3D9;
 }
+
+.contactSec{
+  /* height: 20vh; */
+  background-color: #C5D3D9; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactSec .contactTitle{
+  text-align: center;
+  font-size: 70px;
+  border-bottom: 1px #3E4034 solid;
+}
+.contactSec .contactTitle .link{
+  font-family: 'Montserrat',sans-serif;
+  color: black;
+}
+.contactSec .contactTitle .link .git{
+
+}
+
 
   /* Color Theme Swatches in Hex */
 .Venice-Panorama-1-hex { color: #3E4034; }
@@ -116,4 +140,11 @@ html{
 .Venice-Panorama-3-hex { color: #8B8C81; }
 .Venice-Panorama-4-hex { color: #D9D9D2; }
 .Venice-Panorama-5-hex { color: #BFBFBA; }
+/* Color Theme Swatches in Hex */
+.Fall-2022-1-hex { color: #C5D3D9; }
+.Fall-2022-2-hex { color: #BF9D73; }
+.Fall-2022-3-hex { color: #8C694A; }
+.Fall-2022-4-hex { color: #A68263; }
+.Fall-2022-5-hex { color: #59231E; }
+
 
