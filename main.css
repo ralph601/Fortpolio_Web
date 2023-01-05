@@ -1,7 +1,6 @@
 /* 공통부분 */
 body{
   background-color: #D9D9D2;
-  scroll-behavior: smooth;
 }
 .frame{
   margin: 30px 150px;
@@ -9,7 +8,9 @@ body{
   flex-direction: column;
 }
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 /* 상단 네비게이션 & 로고  */
 .navBar{
