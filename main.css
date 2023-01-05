@@ -1,52 +1,65 @@
 /* 공통부분 */
 body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-a{
-  color:white;
-  text-decoration: none; /* 링크 언더라인 삭제 */
-}
-
-html{
+  background-color: #D9D9D2;
   scroll-behavior: smooth;
+}
+.frame{
+  margin: 30px 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 
 
 /* 상단 네비게이션 & 로고  */
 .navBar{
-  position: fixed; /* 상단에 고정 */
-  background-color: #C5D3D9;
-  width: 100%;
-  padding: 20px 0;
-  z-index: 999; /* z축을 기준으로 가장 위에 배치 */
-  transition: all 0.5s ease;
-  font-size: 20px;
-  font-family: 'Montserrat', 'sans-serif';/*각종 웹브라우저에 호환되는 나눔고딕체 적용*/
-}
-.navBar .max-width{
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between; /* 요소들을 좌 우로 정렬 */
-}
-.navBar .logo{
+  margin-top: 15px;
   font-size: 30px;
-  font-weight: 600;
-  margin-left: 20px;
+  padding: 20px 0;
+  align-items: center;
+  transition: all 0.5s ease;
+  /* margin-left: 20px; */
+  
+}
+h3{
+  font-size: 30px;
+  font-family: 'Montserrat', 'sans-serif';/*각종 웹브라우저에 호환되는 나눔고딕체 적용*/
+  font-weight: 800;
+  margin: 0;
   color: white;
 }
 
-.navBar .menu-bar li{
-  list-style: none;
-  margin: 5px 20px 0 0;
-  display: inline-block;
+li{
+  display: inline;
+  align-self: center;
+  margin: 0;
+  margin-left: 10px;
+  font-family: 'Montserrat', 'sans-serif';/*각종 웹브라우저에 호환되는 나눔고딕체 적용*/
+  font-weight: 400;
+  color:black;
+  /* font-size: 400px; */
 }
-
-.navBar .menu-bar li a:hover{
+ul{
+  margin:0;
+}
+.logo{
+  margin:0;
+  font: 'Montserrat',sans-serif;
+  font-size: 24px;
+}
+a{
+  color:black;
+  text-decoration: none; /* 링크 언더라인 삭제 */
+}
+.nav-menu{
+   font-family: 'Montserrat',sans-serif;
+   font-size: 24px;
+   font-weight: 400;
+}
+a:hover{
   color: yellow;
   transition: 0.5s;
 }
@@ -58,17 +71,13 @@ html{
   height: 50vh;
   background-size: cover;
   min-height: 500px;
-  background-color:  #D9D9D2;
   width: 100%;
-  margin-top: 30px;
 }
 .homeSec .max-width{
-   
+   /* margin:auto 0 auto 0; */
 }
 
 .homeSec .home-section h1{
-  
-  
   color: #3E4034;
   
 }
