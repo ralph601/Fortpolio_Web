@@ -83,7 +83,6 @@ a:hover{
   z-index: 30;
   display: flex;
   flex-direction: row;
-  height: 40vh;
   background-size: cover;
   min-height: 500px;
 }
@@ -120,6 +119,8 @@ a:hover{
 /* 자기 소개 섹션 */
 .aboutSec{
   z-index: 20;
+  position: relative;
+  padding: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -129,9 +130,7 @@ a:hover{
   height: auto;
 }
 #profile-picture{
-  
   width: 400px;
-  border-radius: 50%;
   margin-right: 60px;
 }
 
@@ -148,13 +147,30 @@ a:hover{
   font-size: 20px;
   margin-top: 15px; 
 }
-.contactSec{
-  height: 20vh;
-  background-color: #7D8E95; 
+/* Skill section */
+.skillSec{
+  height: 50vh;
+  padding: 50px;
+  background-color: wheat; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:auto 20px auto 20px;
+  /* margin:auto 20px auto 20px; */
+}
+.skillSec .skillTitle{ 
+  font-family: 'Montserrat',sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color:white;
+}
+/* Contact section */
+.contactSec{
+  height: 20vh;
+  background-color: #e7e7e7; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin:auto 20px auto 20px; */
 }
 .contactSec .contactTitle{
   color:black;
